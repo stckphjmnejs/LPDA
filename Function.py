@@ -369,7 +369,7 @@ def OSystem():
 
 def Setting():
 	check_os()
-	print("\n                  [\033[32mНАСТРОЙКИ\033[33m] ")
+	print("\n                  [\033[32mSETTINGS\033[33m] ")
 	print("        [\033[32m1\033[33m] admins")
 	print("        [\033[32m2\033[33m] time see baners [\033[32mВ сек.\033[33m]")
 	print("        [\033[31m0\033[33m] exit ")
@@ -383,13 +383,13 @@ def create_server():
 
 def probiv_user():
 	check_os()
-	phone_number = input('\n        Введите номер для поиска информации с [\033[32m+7\033[33m]! \n\n        [\033[32m>>\033[33m] ')
+	phone_number = input('\n        write number for information with a  [\033[32m+7\033[33m]! \n\n        [\033[32m>>\033[33m] ')
 	phone_number_check = phone_number.replace("+","")
 	num_kol = len(phone_number_check)
 
 	try:
 		if num_kol == 11:
-			print('\n        Пожалуйста подождите [\033[32m3 сек.\033[33m]!')
+			print('\n        pls w8 [\033[32m3 сек.\033[33m]!')
 			time.sleep(3)
 
 			proxy_url = f'https://{SERVER}.proxysite.com/includes/process.php?action=update'
@@ -443,7 +443,7 @@ def probiv_user():
     	[\033[32m17\033[33m] Длина номера --> [\033[32m{inf16}\033[33m]
     	[\033[32m18\033[33m] Почтовый индекс --> [\033[32m{inf17}\033[33m]''')
 
-			print('        \n        Для выхода напишите [\033[31m0\033[33m]')
+			print('        \n       a for exit please write a [\033[31m0\033[33m]')
 
 			user_logic = input('\n          [\033[32m>>\033[33m]')
 
@@ -454,6 +454,6 @@ def probiv_user():
 				start()
 
 		else:
-			print('        [\033[31mx\033[33m] Введите Российский номер из 11 символов ! ')
+			print('        [\033[31mx\033[33m] please write a only RUSSIAN number of 11 numbers ! ')
 	except:
-		print('        [\033[31mx\033[33m] Введите Российский номер из 11 символов ! ')
+		print('        [\033[31mx\033[33m] please write a only RUSSIAN number of 11 numbers ! ')
